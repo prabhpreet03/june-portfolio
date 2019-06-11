@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap');
+body{
+    background-image: url('../assets/paris.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.nav {
+    margin-top: 5px;
+    color: #626262;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+.nav button, .nav a{
+    color: #626262;
+}
+#logo h5{
+    padding-left: 25px;
+    color: rgb(186, 130, 19);
+    font-family: 'PT Sans Narrow', sans-serif;
+    line-height: 30px;
+}
+#logo-img{
+    margin-bottom: -110px;
+    width: 60%;
+    height: 60%;
+}
+.logo-links{
+    display: flex;
+    line-height: 90px;
+
+}
+#logo{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 180px auto 0 48%;
+    justify-content: space-around;
+}
+#links{
+    display: flex;
+    justify-content: end;
+}
+.social-links{
+    width: 25px;
+    height: 25px;
+    margin-right: 30px;
+}
+.social-links:hover{
+    box-shadow:5px 5px 10px rgb(186, 130, 19);;
+    transition: 1s;
+}
+#mobile-menu{
+    display: none;
+}
+#mobile-quote-text{
+    display: none;
+}
+#mobile-nav-open{
+    display: none;
+}
+@media (max-width:768px){
+    body{
+        background: url('../assets/iphone-8-plus-back.');
+        background-size: 110%;
+        background-color: black;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+    #logo{
+        display: none;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media(max-width:414px){
+    body{
+        background-image: url('../assets/paris-iphone.png');
+        background-color: black;
+        overflow: hidden;
+    }
+    #logo #logo-img{
+        margin: 40px;
+        width: 40px;
+        height: 50px;
+    }
+    .nav{
+        display: none;
+    }
+    #mobile-logo-img{
+        width: 142px;
+        height: 60.57px;
+    }
+    #mobile-menu{
+        display: flex;
+        justify-content: space-between;
+        width: 75%;
+        margin: 10px auto;
+    }
+    #menu-button-mobile{
+        width: 25px;
+        height: 30px;
+        margin-bottom: 80px;
+        padding-top: 5px;
+    }
+    .social-links-mobile{
+        width: 20px;
+        height: 20px;
+        padding: 2.5px;
+        margin-bottom: 5px;
+    }
+    #right-menu-mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #mobile-quote-text{
+        display: block;
+        position: relative;
+        background: white;
+        color: #E39D16;
+        padding: 10px 30px;
+        border-radius: 10px;
+        width: fit-content;
+        margin: 75% auto 0 auto;
+    }
+    #mobile-quote-text h5{
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-weight: 100;
+        font-size: 15px;
+        line-height: 19px;
+        text-align: center;
+    }
+    #mobile-nav-open{
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        background: #1D111E;
+        height: 100%;
+        width: 45%;
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-size: 16px;
+        line-height: 50px;
+        padding: 20px;
+    }
+    #mobile-nav-open-img{
+        width: 142px;
+        height: 60.57px;
+        margin-top: 20px;
+    }
+}
+@media (max-width:320px){
+    #mobile-quote-text{
+        padding: 5px 15px;
+    }
+    #mobile-quote-text h5{
+        font-size: 12px;
+    }
+}
+@media(max-width:375px){
+    body{
+        background-image: url(../assets/iphonex-background.png)
+    }
+}
